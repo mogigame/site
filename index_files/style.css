@@ -170,45 +170,38 @@ body {
   color: #0090fe;
 }
 
-.rules{
+.rule{
   color: white;
-  position: absolute;
-  top: 375px;
-  width: 900px;
-  left: 920px;
   line-height: 27px;
   font-size: 17px;
   border-left: white solid 3px;
   padding-left: 10px;
   border-radius: 1%;
+  margin-top: 100px;
 }
 
-.rulesh1{
-  color: cornflowerblue; 
-  font-family: sans-serif; 
-  margin-top: 0; 
-  margin-bottom: 40px;
-  position: absolute;
-  top: 305px;
-  width: 900px;
-  left: 920px;
-}
 
 .article {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
-.plugin img {
+.articles {
+  display: flex;
+}
+
+.articleImg img {
   width: 336px;
   height: 250px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.plugin {
+.articleImg {
+  margin-left: 20px;
   background-color: #212121;
   width: 336px;
   height: 500px;
   border-radius: 15px;
+  margin-bottom: 110px;
 }
 
 .pluginArticle {
@@ -221,35 +214,28 @@ body {
   color: gray;
 }
 
+.flag {
+  height: 100px;
+}
+
 
 .flag img {
-  height: 920px;
-position: absolute;
+  height: 500px;
 }
 
-
-.question img {
-  width: 80px;
-  height: 80px;
-}
-.question, .question img{
-    position: relative;
-    display: flex;
-} 
 
 .question {
-  margin-left: 1125px;
-  padding-top: 300px;
+  margin-left: 650px;
   color: white;
   line-height: 15px;
 }
+
+
 .question2 i{
   position: absolute;
-  margin-left: 1045px;
-  margin-top: 333px;
-  line-height: 15px;
+  margin-left: 585px;
+  margin-top: -70px;
   font-size: 45px;
-  font-weight: 50px;
   color: cornflowerblue;
 }
 
@@ -258,21 +244,22 @@ position: absolute;
   border-radius: 100%;
   padding: 30px 30px 30px 30px;
   width: 0px;
-  margin-left: 1020px;
-  margin-top: 300px;
+  margin-top: -85px;
+  margin-left: 560px;
   position: absolute;
 }
 
 
 .rdv{  
   color: gray;
-  margin-left: 1125px;
+  margin-left: 650px;
 }
 
 
 .rdv i{
+  margin-top: -3px;
   font-size: 25px;
-  margin-left: 5px;
+  margin-left: 10px;
   vertical-align: middle;
   color: cornflowerblue;
 }
@@ -286,11 +273,11 @@ position: absolute;
 
 @keyframes glissement {
     from {
-    margin-left: 1125px;
+    margin-left: 650px;
   }
 
   to {
-    margin-left: 1130px;
+    margin-left: 655px;
   }
 }
 
@@ -303,36 +290,44 @@ position: absolute;
   color: gray;
 }
 
-.question h1{
-  margin-bottom: 15px;
-}
-
-
-
-.probleme img {
-  width: 80px;
-  height: 80px;
-}
-.probleme, .probleme img{
-    position: relative;
-    display: flex;
-} 
 
 .probleme {
-  margin-left: 1125px;
+  margin-left: 650px;
   padding-top: 50px;
   color: white;
   line-height: 15px;
 }
 .probleme2 i{
   position: absolute;
-  margin-left: 1045px;
-  margin-top: 100px;
-  line-height: 15px;
+  margin-left: 570px;
+  margin-top: 75px;
   font-size: 70px;
   color: cornflowerblue;
 }
 
 .probleme h1{
   margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aqua{
+  color: cornflowerblue;
 }
