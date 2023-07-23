@@ -1,4 +1,15 @@
-  .staffs {
+.rule{
+  color: white;
+  line-height: 27px;
+  font-size: 17px;
+  border-left: white solid 3px;
+  padding-left: 15px;
+  border-radius: 1%;
+  margin-top: 100px;
+}
+
+
+.staffs {
     text-align: center;
     margin-top: 150px;
     color: white;
@@ -41,4 +52,19 @@
 
 .staff p{
     margin: 10px auto;
+}
+
+.rules{
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+li{
+  color: #0090fe;
+  margin-bottom: 30px;
+}
+
+li:first-line{
+  color:#FFFFFF;
 }

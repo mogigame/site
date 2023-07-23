@@ -5,7 +5,9 @@ body {
   margin: 0;
 }
 
-
+.white {
+  color: white;
+}
 
 .menu {
   font-family: 'Raleway', Arial, sans-serif;
