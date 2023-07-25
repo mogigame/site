@@ -15,15 +15,17 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 150px;
   }
-
-.skin img{
+  
+  .logo img{
     width: 25%;
     vertical-align: middle;
     align-items: center;
-}
-
-
+    border-radius: 15px;
+  }
+  
+  
   .staff{
     background-color: #21252B;
     width: 300px;

@@ -78,6 +78,7 @@ body {
   height: 50px;
   width: auto;
   position: absolute;
+  border-radius: 15px;
 }
 
 .header{
