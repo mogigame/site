@@ -1,0 +1,28 @@
+table  {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableaux {
+    display: flex;
+    padding-top: 125px;
+}
+
+td {
+    padding: 10px 30px;
+    border: 2px solid white;
+}
+
+th {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.moderator{
+border: 2px solid white;
+}
+
+.member {
+border: 2px solid white;
+}
