@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@media (prefers-color-scheme: dark) {
 body {
   background-color: #303030;  
   font-family: Arial, Helvetica, sans-serif;
@@ -19,10 +20,10 @@ body {
   padding-right: 40px;
 }
 .menu * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 .menu li {
-  display: inline-block;
+display: inline-block;
   list-style: outside none none;
   margin: 0 1.5em;
   padding: 0;
@@ -30,7 +31,7 @@ body {
   margin-right: 30px;
 }
 .menu a {
-  padding: 0.5em 0;
+padding: 0.5em 0;
   color: #ffffff80;
   position: relative;
   letter-spacing: 1px;
@@ -38,12 +39,12 @@ body {
 }
 .menu a:before,
 .menu a:after {
-  position: absolute;
+position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 .menu a:before {
-  bottom: 0;
+bottom: 0;
   display: block;
   height: 3px;
   width: 0%;
@@ -63,7 +64,7 @@ body {
 }
 .menu a:hover:before,
 .menu .current a:before {
-  opacity: 1;
+opacity: 1;
   width: 100%;
 }
 .menu a:hover:after,
@@ -71,8 +72,40 @@ body {
   max-width: 100%;
 }
 
+.menu .minecraft-dropdown {
+  display: none;
+  position: absolute;
+  box-shadow: 0 8px 16px #00000033;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-.header img {
+.menu .minecraft:hover .minecraft-dropdown {
+  display: block;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.menu .minecraft-dropdown li {
+  margin-left: 30px;
+  margin-right: 20px;
+  display: block;
+}
+
+
+.menu .minecraft-dropdown a {
+  color: #ffffff80;
+}
+
+.menu .minecraft-dropdown a:hover {
+  color: #fff;
+}
+
+
+
+
+header img {
   padding-top: 15px;
   padding-left: 80px;
   height: 50px;
@@ -81,6 +114,174 @@ body {
   border-radius: 15px;
 }
 
-.header{
+header{
   display: flex;
 }
+
+.theme {
+  background-color: #7b38d8;
+  padding: 5px;
+  width: 175px;
+  color: #ffffff;
+  text-align: center;
+  border: 4px double #cccccc;
+  border-radius: 10px; 
+  font-size: 28px;
+  margin-left: 600px;
+  margin-right: 80px;
+  margin-top: 10px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 25px;
+}
+
+footer {
+  background-color: #333333;
+  color: gray;
+  margin-bottom: 0px;
+  padding-top: 25px;
+  padding-left: 80px;
+  padding-bottom: 15px;
+  display: flex;
+}
+.droite a {
+  text-decoration: none;
+  color: gray;
+}
+
+.droite {
+  padding-left: 45%;
+  padding-top: 50px;
+}
+
+footer p{
+  margin: 0px 0px;
+}
+.gauche {
+  width: 443px;
+}
+
+.c {
+  padding-top: 50px;
+  color: #616060;
+}
+
+.color_303030 {
+  color: white;
+}
+
+.M_black {
+  display: none;
+}
+}
+
+@media (prefers-color-scheme: light) {
+  
+  body {
+    background-color: #cacaca;  
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  
+  .menu .minecraft-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu .minecraft:hover .minecraft-dropdown {
+    display: block;
+}
+
+.menu .minecraft-dropdown li {
+    display: block;
+}
+
+.menu .minecraft-dropdown a {
+    color: #303030;
+}
+
+.menu .minecraft-dropdown a:hover {
+    background-color: #00d0ff;
+    color: #fff;
+}
+
+  
+  header img {
+    padding-top: 15px;
+    padding-left: 80px;
+    height: 50px;
+    width: auto;
+    position: absolute;
+    border-radius: 15px;
+  }
+  
+  header{
+    display: flex;
+  }
+  
+  .theme {
+    background-color: #7b38d8;
+    padding: 5px;
+    width: 175px;
+    color: #ffffff;
+    text-align: center;
+    border: 4px double #cccccc;
+    border-radius: 10px; 
+    font-size: 28px;
+    margin-left: 600px;
+    margin-right: 80px;
+    margin-top: 10px;
+  }
+  
+  footer img {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 25px;
+  }
+  
+  footer {
+    background-color: #bbbbbb;
+    color: #303030;
+    margin-bottom: 0px;
+    padding-top: 25px;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    display: flex;
+  }
+  .droite a {
+    text-decoration: none;
+    color: #303030;
+  }
+  
+  .droite {
+    padding-left: 45%;
+    padding-top: 50px;
+  }
+  
+  footer p{
+    margin: 0px 0px;
+  }
+  .gauche {
+    width: 443px;
+  }
+  
+  .c {
+    padding-top: 50px;
+    color: #616060;
+  }
+    .M {
+      display: none;
+    }
+
+    .color_303030 {
+      color: #303030;
+    }
+  }
+

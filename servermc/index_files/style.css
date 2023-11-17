@@ -1,0 +1,76 @@
+@media (prefers-color-scheme: dark) {
+main {
+    color: white;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 200px;
+}
+
+.welcome {
+  line-height: 40px;
+  font-size: 35px;
+  color: white;
+}
+
+
+.QuoiTrouver {
+  color: #d7d2d2;
+}
+
+
+.boutton button {
+    background: linear-gradient(to top right,#ffb45f, #e0621b);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    justify-content: center;
+    height: 53px;
+    padding: 16px;
+    width: 375px;
+    border: 0;
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .boutton .SavoirPlus button {
+    margin-left: 50px; 
+    background: #373636;
+  }
+  
+  .boutton .SavoirPlus a {
+    text-decoration: none;
+  }
+  
+  .boutton button:hover{background: linear-gradient(to top right,#faa340, #da5407);
+  }
+  
+  .boutton .SavoirPlus button:hover{background: #2d2d2d;
+  }
+  
+  
+  .boutton {
+    padding-top: 60px;
+  }
+  
+  
+  .SavoirPlus {
+    padding-left: 375px;
+    padding-bottom: 15px;
+  }
+  
+  .plus {
+    margin-left: 5px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+  }
+  
+
+
+.ip {
+  margin-left: 5px;
+    color: darkorchid ;
+    font-weight: bold;
+}
+}

@@ -1,0 +1,13 @@
+.mention {
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 25px;
+    line-height: 25px;
+}
+
+.mention img {
+    width: 125px;
+    display: flex;
+}
+
