@@ -13,4 +13,6 @@ function copierMessage() {
     document.execCommand('copy');
 
     document.body.removeChild(textarea);
+    
+    document.getElementById('copier').innerHTML = 'ip <span class="ip">copié </span>';
 }

@@ -96,13 +96,13 @@
   margin-bottom: 110px;
 }
 
-.pluginArticle {
+.bcArticle {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.pluginArticle p {
+.bcArticle p {
   color: gray;
 }
 
@@ -179,7 +179,6 @@
 
 .probleme{
   margin-top: 100px;
-  padding-bottom: 80px;
 }
 
 .probleme3 {
@@ -311,13 +310,13 @@
     margin-bottom: 110px;
   }
   
-  .pluginArticle {
+  .bcArticle {
     color: #303030;
     padding-left: 20px;
     padding-right: 20px;
   }
   
-  .pluginArticle p {
+  .bcArticle p {
     color: gray;
   }
   
@@ -403,7 +402,6 @@
   
   .probleme{
     margin-top: 100px;
-    padding-bottom: 80px;
   }
   
   .probleme3 {

@@ -73,4 +73,42 @@ main {
     color: darkorchid ;
     font-weight: bold;
 }
+
+
+.article {
+  padding-top: 100px;
+}
+
+.articles {
+  display: flex;
+}
+
+.articleImg img {
+  width: 336px;
+  height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.articleImg {
+  margin-left: 20px;
+  background-color: #212121;
+  width: 336px;
+  height: 500px;
+  border-radius: 15px;
+  margin-bottom: 110px;
+}
+
+.bcArticle {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bcArticle p {
+  color: gray;
+}
+
+.VoirArticle {
+  text-align: end;
+}
 }
