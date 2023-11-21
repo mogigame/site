@@ -1,6 +1,23 @@
-@media (prefers-color-scheme: dark) {
-    table  {
-    color: white;
+:root {
+    --color_303030: #303030;
+    --color_white: #ffffff80;
+    --color_333333: #333333;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color_303030: #d4d2d2;
+        --color_white: #303030;
+        --color_333333: #bbbbbb;
+    }
+
+    .M {
+        display: none;
+    }
+}
+
+table {
+    color: var(--color_white);
     margin-left: auto;
     margin-right: auto;
 }
@@ -13,20 +30,20 @@
 
 td {
     padding: 10px 30px;
-    border: 2px solid white;
+    border: 2px solid var(--color_white);
 }
 
 th {
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid var(--color_white);
 }
 
-.moderator{
-border: 2px solid white;
+.moderator {
+    border: 2px solid var(--color_white);
 }
 
 .member {
-border: 2px solid white;
+    border: 2px solid var(--color_white);
 }
 
 .M_black {
@@ -35,42 +52,4 @@ border: 2px solid white;
 
 footer {
     padding-top: 150px;
-}
-}
-@media (prefers-color-scheme: light) {
-    table  {
-        color: #303030;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .tableaux {
-        display: flex;
-        padding-top: 125px;
-        padding-bottom: 25px;
-    }
-    
-    td {
-        padding: 10px 30px;
-        border: 2px solid #303030;
-    }
-    
-    th {
-        padding: 10px;
-        border: 2px solid #303030;
-    }
-    
-    .moderator{
-        border: 2px solid #303030;
-    }
-    
-    .member {
-        border: 2px solid #303030;
-    }
-    .M {
-        display: none;
-    }
-    footer {
-        margin-top: 150px;
-    }
 }

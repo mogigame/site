@@ -1,13 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-@media (prefers-color-scheme: dark) {
-body {
-  background-color: #303030;  
+
+:root {
+  --color_303030: #303030;
+  --color_white: #ffffff80;
+  --color_333333: #333333;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --color_303030: #d4d2d2;
+    --color_white: #303030;
+    --color_333333: #bbbbbb;
+    .M_black {
+      display: block;
+    }
+  }
+}
+  body {
+  background-color: var(--color_303030);  
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
 .white {
-  color: white;
+  color: var(--color_white);
 }
 
 .menu {
@@ -32,7 +47,7 @@ display: inline-block;
 }
 .menu a {
 padding: 0.5em 0;
-  color: #ffffff80;
+  color: var(--color_white);
   position: relative;
   letter-spacing: 1px;
   text-decoration: none;
@@ -57,7 +72,7 @@ bottom: 0;
   padding: 0.5em 0;
   position: absolute;
   content: attr(data-hover);
-  color: #ffffff;
+  color: var(--color_white);
   white-space: nowrap;
   max-width: 0%;
   overflow: hidden;
@@ -79,7 +94,7 @@ opacity: 1;
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #303030;
+  background-color: var(--color_303030);
 }
 
 .menu .minecraft:hover .minecraft-dropdown {
@@ -96,11 +111,11 @@ opacity: 1;
 
 
 .menu .minecraft-dropdown a {
-  color: #ffffff80;
+  color: var(--color_white);
 }
 
 .menu .minecraft-dropdown a:hover {
-  color: #fff;
+  color: var(--color_white);
 }
 
 
@@ -140,7 +155,7 @@ footer img {
 }
 
 footer {
-  background-color: #333333;
+  background-color: var(--color_333333);
   color: gray;
   margin-bottom: 0px;
   margin-top: 80px;
@@ -172,186 +187,9 @@ footer p{
 }
 
 .color_303030 {
-  color: white;
+  color: var(--color_white);
 }
 
 .M_black {
   display: none;
 }
-}
-
-@media (prefers-color-scheme: light) {
-  
-  body {
-    background-color: #cacaca;  
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  
-  
-  .menu {
-    font-family: 'Raleway', Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 0px;
-    padding-top: 35px;
-    padding-left: 80px;
-    padding-right: 40px;
-  }
-  .menu * {
-  box-sizing: border-box;
-  }
-  .menu li {
-  display: inline-block;
-    list-style: outside none none;
-    margin: 0 1.5em;
-    padding: 0;
-    margin-left: 80px;
-    margin-right: 30px;
-  }
-  .menu a {
-  padding: 0.5em 0;
-    color: #303030;
-    position: relative;
-    letter-spacing: 1px;
-    text-decoration: none;
-  }
-  .menu a:before,
-  .menu a:after {
-  position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-  }
-  .menu a:before {
-  bottom: 0;
-    display: block;
-    height: 3px;
-    width: 0%;
-    content: "";
-    background-color: #00d0ff;
-  }
-  .menu a:after {
-    left: 0;
-    top: 0;
-    padding: 0.5em 0;
-    position: absolute;
-    content: attr(data-hover);
-    color: #303030;
-    white-space: nowrap;
-    max-width: 0%;
-    overflow: hidden;
-  }
-  .menu a:hover:before,
-  .menu .current a:before {
-  opacity: 1;
-    width: 100%;
-  }
-  .menu a:hover:after,
-  .menu .current a:after {
-    max-width: 100%;
-  }
-  
-  .menu .minecraft-dropdown {
-    display: none;
-    position: absolute;
-    box-shadow: 0 8px 16px white;
-    z-index: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #cacaca;
-  }
-  
-  .menu .minecraft:hover .minecraft-dropdown {
-    display: block;
-    padding-left: 0;
-    margin-top: 5px;
-  }
-  
-  .menu .minecraft-dropdown li {
-    margin-left: 30px;
-    margin-right: 20px;
-    display: block;
-  }
-  
-  
-  .menu .minecraft-dropdown a {
-    color: #303030;
-  }
-  
-  .menu .minecraft-dropdown a:hover {
-    color: #303030;
-  }
-
-  
-  header img {
-    padding-top: 15px;
-    padding-left: 80px;
-    height: 50px;
-    width: auto;
-    position: absolute;
-    border-radius: 15px;
-  }
-  
-  header{
-    display: flex;
-  }
-  
-  .theme {
-    background-color: #7b38d8;
-    padding: 5px;
-    width: 175px;
-    color: #ffffff;
-    text-align: center;
-    border: 4px double #cccccc;
-    border-radius: 10px; 
-    font-size: 28px;
-    margin-left: 600px;
-    margin-right: 80px;
-    margin-top: 10px;
-  }
-  
-  footer img {
-    width: 40px;
-    height: 40px;
-    padding-bottom: 25px;
-  }
-  
-  footer {
-    background-color: #bbbbbb;
-    color: #303030;
-    margin-bottom: 0px;
-    padding-top: 25px;
-    padding-left: 80px;
-    padding-bottom: 15px;
-    display: flex;
-  }
-  .droite a {
-    text-decoration: none;
-    color: #303030;
-  }
-  
-  .droite {
-    padding-left: 45%;
-    padding-top: 50px;
-  }
-  
-  footer p{
-    margin: 0px 0px;
-  }
-  .gauche {
-    width: 443px;
-  }
-  
-  .c {
-    padding-top: 50px;
-    color: #616060;
-  }
-    .M {
-      display: none;
-    }
-
-    .color_303030 {
-      color: #303030;
-    }
-  }
-

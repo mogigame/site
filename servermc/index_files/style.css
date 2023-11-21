@@ -9,10 +9,26 @@
   }
 }
 
-/*Si thème sombre*/
-@media (prefers-color-scheme: dark) {
+
+:root {
+  --color_303030: #303030;
+  --color_white: #ffffff80;
+  --color_333333: #333333;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --color_303030: #d4d2d2;
+  --color_white: #303030;
+  --color_333333: #bbbbbb;
+}
+  .M{
+    display: none;
+  }
+}
+
 main {
-    color: white;
+    color: var(--color_white);
     padding-right: 80px;
     padding-left: 80px;
     padding-top: 200px;
@@ -21,12 +37,12 @@ main {
 .welcome {
   line-height: 40px;
   font-size: 35px;
-  color: white;
+  color: var(--color_white);
 }
 
 
 .QuoiTrouver {
-  color: #d7d2d2;
+  color: var(--color_white);
 }
 
 
@@ -116,7 +132,7 @@ main {
 }
 .articleImg {
   margin-left: 20px;
-  background-color: #212121;
+  background-color: var(--color_333333);
   width: 336px;
   height: 500px;
   border-radius: 15px;
@@ -124,7 +140,7 @@ main {
 }
 
 .bcArticle {
-  color: white;
+  color: var(--color_white);
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -190,5 +206,4 @@ main {
 .rdv a {
   text-decoration: none;
   color: gray;
-}
 }
