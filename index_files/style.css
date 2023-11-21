@@ -1,244 +1,75 @@
+/*
+metre 1 fois le css pour dark et light avec les variable (*
+
+si light
+root {
+  --color: #fff;
+}
+
+
+si dark
 @media (prefers-color-scheme: dark) {
-  main {
-  padding-right: 80px;
-  padding-left: 80px;
-  padding-top: 200px;
+root{
+  --color: #000;
+}
+} 
+
+body  {
+  background-color: var(--color);
 }
 
-.rejoindre {
-  color: aqua;
-  text-decoration: underline;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.commencez {
-  line-height: 40px;
-  font-size: 35px;
-  color: white;
-}
-
-
-.explications {
-  color: #d7d2d2;
-}
-
-.boutton button {
-  background: linear-gradient(to top right,#004cff, #00d0ff);
-  border-radius: 6px;
-  cursor: pointer;
-  display: flex;
-  font: inherit;
-  justify-content: center;
-  height: 53px;
-  padding: 16px;
-  width: 375px;
-  border: 0;
-  position: absolute;
-  color: white;
-  font-weight: bolder;
-}
-
-.boutton .SavoirPlus button {
-  margin-left: 50px; 
-  background: #373636;
-}
-
-.boutton .SavoirPlus a {
-  text-decoration: none;
-}
-
-.boutton button:hover{background: linear-gradient(to top right,#0022ff, #007bff);
-}
-
-.boutton .SavoirPlus button:hover{background: #2d2d2d;
-}
-
-
-.boutton {
-  padding-top: 60px;
-}
-
-
-.SavoirPlus {
-  padding-left: 375px;
-  padding-bottom: 15px;
-}
-
-.plus {
-  margin-left: 5px;
-  color: rgb(255, 0, 0);
-  font-weight: bold;
-}
-
-
-
-.article {
-  padding-top: 100px;
-}
-
-.articles {
-  display: flex;
-}
-
-.articleImg img {
-  width: 336px;
-  height: 250px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.articleImg {
-  margin-left: 20px;
-  background-color: #212121;
-  width: 336px;
-  height: 500px;
-  border-radius: 15px;
-  margin-bottom: 110px;
-}
-
-.bcArticle {
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.bcArticle p {
-  color: gray;
-}
-
-.VoirArticle {
-  text-align: end;
-}
-
-
-.question3 {
-  color: white;
-  line-height: 15px;
-  margin-left: 100px;
-}
-
-
-.question2 i{
-  position: absolute; 
-  font-size: 45px;
-  color: cornflowerblue;
-  margin-top: -70px;
-  margin-left: 25px;
-}
-
-.cercle{
-  border: cornflowerblue solid 8px;
-  border-radius: 100%;
-  padding: 30px 30px 30px 30px;
-  width: 0px;
-  margin-top: -85px;
-  position: absolute;
-}
-
-
-.rdv{  
-  color: gray;
-  margin-left: 15px;
-}
-
-
-.rdv i{
-  margin-top: -3px;
-  font-size: 25px;
-  margin-left: 10px;
-  vertical-align: middle;
-  color: cornflowerblue;
-}
-
-.rdv:hover{
-  animation-fill-mode: forwards;
-  animation-duration: 0.3s;
-  animation-name: glissement;
-}
-
-
+*/
+/* Animation */
 @keyframes glissement {
   from {
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   to {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 }
 
-.rdv li{
-  list-style-type: none;
+/*--------------------------------*/
+@keyframes article {
+  from {
+    margin-left: 20px;
+  }
+
+  to {
+    margin-left: 15px;
+    margin-top: 5px;
+    box-shadow: black 5px 0px 10px;
+  }
 }
 
-.rdv a{
-  text-decoration: none;
-  color: gray;
-}
-
-
-.probleme{
-  margin-top: 100px;
-}
-
-.probleme3 {
-  margin-left: 100px;
-  color: white;
-  line-height: 15px;
-}
-.probleme2 i{
-  position: absolute;
-  margin-top: -5px;
-  margin-left: 15px;
-  font-size: 70px;
-  color: cornflowerblue;
-}
-
-.probleme h1{
-  margin-bottom: 15px;
-}
-
-.aqua{
-  color: cornflowerblue;
-}
-
-
-.M_black {
-  display: none;
-}
-
-
-}
-
-
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   main {
     padding-right: 80px;
     padding-left: 80px;
     padding-top: 200px;
   }
-  
+
   .rejoindre {
     color: aqua;
     text-decoration: underline;
     font-size: 25px;
     font-weight: bold;
   }
-  
+
   .commencez {
     line-height: 40px;
     font-size: 35px;
-    color: #303030;
+    color: white;
   }
-  
 
-  
+
   .explications {
-    color: #444444;
+    color: #d7d2d2;
   }
-  
+
   .boutton button {
-    background: linear-gradient(to top right,#004cff, #00d0ff);
+    background: linear-gradient(to top right, #004cff, #00d0ff);
     border-radius: 6px;
     cursor: pointer;
     display: flex;
@@ -252,172 +83,320 @@
     color: white;
     font-weight: bolder;
   }
-  
+
   .boutton .SavoirPlus button {
-    margin-left: 50px; 
+    margin-left: 50px;
     background: #373636;
   }
-  
+
   .boutton .SavoirPlus a {
     text-decoration: none;
   }
-  
-  .boutton button:hover{background: linear-gradient(to top right,#0022ff, #007bff);
+
+  .boutton button:hover {
+    background: linear-gradient(to top right, #0022ff, #007bff);
   }
-  
-  .boutton .SavoirPlus button:hover{background: #2d2d2d;
+
+  .boutton .SavoirPlus button:hover {
+    background: #2d2d2d;
   }
-  
-  
+
+
   .boutton {
     padding-top: 60px;
   }
-  
-  
+
+
   .SavoirPlus {
     padding-left: 375px;
     padding-bottom: 15px;
   }
-  
+
   .plus {
     margin-left: 5px;
     color: rgb(255, 0, 0);
     font-weight: bold;
   }
-  
-  
-  
+
+
+
   .article {
     padding-top: 100px;
   }
-  
+
+  .articleImg:hover {
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-name: article;
+  }
+
   .articles {
     display: flex;
   }
-  
+
   .articleImg img {
     width: 336px;
     height: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+
   .articleImg {
     margin-left: 20px;
-    background-color:   white;
+    background-color: #212121;
+    width: 336px;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 110px;
+    box-shadow: black 0px 5px 10px;
+  }
+
+  .bcArticle {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bcArticle p {
+    color: gray;
+  }
+
+  .VoirArticle {
+    text-align: end;
+  }
+
+
+  .probleme2 i {
+    position: absolute;
+    font-size: 70px;
+    color: cornflowerblue;
+
+  }
+
+  .probleme {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: white;
+  }
+
+  .avez {
+    padding-left: 85px;
+  }
+
+
+
+  .rdv {
+    color: gray;
+    margin-top: -35px;
+  }
+
+  .rdv i {
+    font-size: 25px;
+    vertical-align: middle;
+    color: cornflowerblue;
+  }
+
+  .rdv:hover {
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-name: glissement;
+  }
+
+
+  .rdv li {
+    list-style-type: none;
+  }
+
+  .rdv a {
+    text-decoration: none;
+    color: gray;
+  }
+
+
+
+
+  .aqua {
+    color: cornflowerblue;
+  }
+
+
+  .M_black {
+    display: none;
+  }
+
+
+}
+
+
+@media (prefers-color-scheme: light) {
+  main {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 200px;
+  }
+
+  .rejoindre {
+    color: aqua;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .commencez {
+    line-height: 40px;
+    font-size: 35px;
+    color: #303030;
+  }
+
+
+
+  .explications {
+    color: #444444;
+  }
+
+  .boutton button {
+    background: linear-gradient(to top right, #004cff, #00d0ff);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    justify-content: center;
+    height: 53px;
+    padding: 16px;
+    width: 375px;
+    border: 0;
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .boutton .SavoirPlus button {
+    margin-left: 50px;
+    background: #373636;
+  }
+
+  .boutton .SavoirPlus a {
+    text-decoration: none;
+  }
+
+  .boutton button:hover {
+    background: linear-gradient(to top right, #0022ff, #007bff);
+  }
+
+  .boutton .SavoirPlus button:hover {
+    background: #2d2d2d;
+  }
+
+
+  .boutton {
+    padding-top: 60px;
+  }
+
+
+  .SavoirPlus {
+    padding-left: 375px;
+    padding-bottom: 15px;
+  }
+
+  .plus {
+    margin-left: 5px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+  }
+
+
+
+  .article {
+    padding-top: 100px;
+  }
+
+  .articles {
+    display: flex;
+  }
+
+  .articleImg img {
+    width: 336px;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .articleImg {
+    margin-left: 20px;
+    background-color: white;
     width: 336px;
     height: 500px;
     border-radius: 15px;
     margin-bottom: 110px;
   }
-  
+
   .bcArticle {
     color: #303030;
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .bcArticle p {
     color: gray;
   }
-  
+
   .VoirArticle {
     text-align: end;
   }
-  
-  
-  .question3 {
-    color: #303030;
-    line-height: 15px;
-    margin-left: 100px;
-  }
-  
-  
-  .question2 i{
-    position: absolute; 
-    font-size: 45px;
-    color: cornflowerblue;
-    margin-top: -70px;
-    margin-left: 25px;
-  }
-  
-  .cercle{
-    border: cornflowerblue solid 8px;
-    border-radius: 100%;
-    padding: 30px 30px 30px 30px;
-    width: 0px;
-    margin-top: -85px;
+
+
+  .probleme2 i {
     position: absolute;
+    font-size: 70px;
+    color: cornflowerblue;
+
   }
-  
-  
-  .rdv{  
+
+  .probleme {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: #303030;
+  }
+
+  .avez {
+    padding-left: 85px;
+  }
+
+
+
+  .rdv {
     color: gray;
-    margin-left: 15px;
+    margin-top: -35px;
   }
-  
-  
-  .rdv i{
-    margin-top: -3px;
+
+  .rdv i {
     font-size: 25px;
-    margin-left: 10px;
     vertical-align: middle;
     color: cornflowerblue;
   }
-  
-  .rdv:hover{
+
+  .rdv:hover {
     animation-fill-mode: forwards;
     animation-duration: 0.3s;
     animation-name: glissement;
   }
-  
-  
-  @keyframes glissement {
-      from {
-      margin-left: 15px;
-    }
-  
-    to {
-      margin-left: 20px;
-    }
-  }
-  
-  .rdv li{
+
+
+  .rdv li {
     list-style-type: none;
   }
-  
-  .rdv a{
+
+  .rdv a {
     text-decoration: none;
     color: gray;
   }
-  
-  
-  .probleme{
-    margin-top: 100px;
-  }
-  
-  .probleme3 {
-    margin-left: 100px;
-    color: #303030;
-    line-height: 15px;
-  }
-  .probleme2 i{
-    position: absolute;
-    margin-top: -5px;
-    margin-left: 15px;
-    font-size: 70px;
-    color: cornflowerblue;
-  }
-  
-  .probleme h1{
-    margin-bottom: 15px;
-  }
-  
-  .aqua{
+
+  .aqua {
     color: cornflowerblue;
   }
 
-    .M {
-      display: none;
-    }
-    
+  .M {
+    display: none;
   }
+
+}

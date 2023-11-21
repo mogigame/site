@@ -32,6 +32,10 @@ border: 2px solid white;
 .M_black {
     display: none;
 }
+
+footer {
+    padding-top: 150px;
+}
 }
 @media (prefers-color-scheme: light) {
     table  {
@@ -57,13 +61,16 @@ border: 2px solid white;
     }
     
     .moderator{
-    border: 2px solid #303030;
+        border: 2px solid #303030;
     }
     
     .member {
-    border: 2px solid #303030;
+        border: 2px solid #303030;
     }
     .M {
         display: none;
+    }
+    footer {
+        margin-top: 150px;
     }
 }

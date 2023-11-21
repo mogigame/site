@@ -79,6 +79,7 @@ opacity: 1;
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #303030;
 }
 
 .menu .minecraft:hover .minecraft-dropdown {
@@ -188,30 +189,98 @@ footer p{
   }
   
   
+  .menu {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px;
+    padding-top: 35px;
+    padding-left: 80px;
+    padding-right: 40px;
+  }
+  .menu * {
+  box-sizing: border-box;
+  }
+  .menu li {
+  display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    padding: 0;
+    margin-left: 80px;
+    margin-right: 30px;
+  }
+  .menu a {
+  padding: 0.5em 0;
+    color: #303030;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .menu a:before,
+  .menu a:after {
+  position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu a:before {
+  bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #00d0ff;
+  }
+  .menu a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #303030;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+  }
+  .menu a:hover:before,
+  .menu .current a:before {
+  opacity: 1;
+    width: 100%;
+  }
+  .menu a:hover:after,
+  .menu .current a:after {
+    max-width: 100%;
+  }
+  
   .menu .minecraft-dropdown {
     display: none;
     position: absolute;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px white;
     z-index: 1;
-}
-
-.menu .minecraft:hover .minecraft-dropdown {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #cacaca;
+  }
+  
+  .menu .minecraft:hover .minecraft-dropdown {
     display: block;
-}
-
-.menu .minecraft-dropdown li {
+    padding-left: 0;
+    margin-top: 5px;
+  }
+  
+  .menu .minecraft-dropdown li {
+    margin-left: 30px;
+    margin-right: 20px;
     display: block;
-}
-
-.menu .minecraft-dropdown a {
+  }
+  
+  
+  .menu .minecraft-dropdown a {
     color: #303030;
-}
-
-.menu .minecraft-dropdown a:hover {
-    background-color: #00d0ff;
-    color: #fff;
-}
+  }
+  
+  .menu .minecraft-dropdown a:hover {
+    color: #303030;
+  }
 
   
   header img {
