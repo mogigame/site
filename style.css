@@ -186,7 +186,7 @@ footer p{
 }
 
 .color_303030 {
-  color: var(--color_white);
+  color: var(--color_text_default);
 }
 
 .M_black {
