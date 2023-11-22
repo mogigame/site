@@ -2,13 +2,15 @@
   --color_303030: #303030;
   --color_white: #ffffff80;
   --color_333333: #333333;
+  --color_text_default: #fff;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-      --color_303030: #d4d2d2;
-      --color_white: #303030;
-      --color_333333: #bbbbbb;
+    --color_303030: #d4d2d2;
+    --color_white: #303030;
+    --color_333333: #bbbbbb;
+    --color_text_default: #000;
   }
 
   .M {
@@ -16,21 +18,12 @@
   }
 }
 
-  .rule{
-  color: var(--color_white);
-  line-height: 27px;
-  font-size: 17px;
-  border-left: var(--color_white) solid 3px;
-  padding-left: 15px;
-  border-radius: 1%;
-  margin-top: 100px;
-}
 
 
 .staffs {
-    text-align: center;
+  text-align: center;
     margin-top: 150px;
-    color: var(--color_white);
+    color: var(--color_text_default);
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
@@ -75,21 +68,32 @@
 }
 
 .rules{
+  color: var(--color_text_default);
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
 }
 
+.rule{
+color: var(--color_white);
+line-height: 27px;
+font-size: 17px;
+border-left: var(--color_text_default) solid 3px;
+padding-left: 15px;
+border-radius: 1%;
+margin-top: 100px;
+}
 li{
   color: #0090fe;
   margin-bottom: 30px;
 }
 
 li:first-line{
-  color:var(--color_white);
+  color:var(--color_text_default);
 }
+
 .white{
-  color: var(--color_white);
+  color: var(--color_text_default);
 }
 
 .M_black {

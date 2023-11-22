@@ -4,12 +4,14 @@
   --color_303030: #303030;
   --color_white: #ffffff80;
   --color_333333: #333333;
+  --color_text_default: #fff;
 }
 @media (prefers-color-scheme: light) {
   :root {
     --color_303030: #d4d2d2;
     --color_white: #303030;
     --color_333333: #bbbbbb;
+    --color_text_default: #000;
     .M_black {
       display: block;
     }
@@ -21,9 +23,6 @@
   margin: 0;
 }
 
-.white {
-  color: var(--color_white);
-}
 
 .menu {
   font-family: 'Raleway', Arial, sans-serif;

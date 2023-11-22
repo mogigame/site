@@ -2,6 +2,7 @@
     --color_303030: #303030;
     --color_white: #ffffff80;
     --color_333333: #333333;
+    --color_text_default: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -9,6 +10,7 @@
         --color_303030: #d4d2d2;
         --color_white: #303030;
         --color_333333: #bbbbbb;
+        --color_text_default: #000;
     }
 
     .M {
@@ -30,20 +32,20 @@ table {
 
 td {
     padding: 10px 30px;
-    border: 2px solid var(--color_white);
+    border: 2px solid var(--color_text_default);
 }
 
 th {
     padding: 10px;
-    border: 2px solid var(--color_white);
+    border: 2px solid var(--color_text_default);
 }
 
 .moderator {
-    border: 2px solid var(--color_white);
+    border: 2px solid var(--color_text_default);
 }
 
 .member {
-    border: 2px solid var(--color_white);
+    border: 2px solid var(--color_text_default);
 }
 
 .M_black {

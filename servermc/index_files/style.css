@@ -14,21 +14,24 @@
   --color_303030: #303030;
   --color_white: #ffffff80;
   --color_333333: #333333;
+  --color_text_default: #fff;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --color_303030: #d4d2d2;
-  --color_white: #303030;
-  --color_333333: #bbbbbb;
-}
-  .M{
-    display: none;
+    --color_303030: #d4d2d2;
+    --color_white: #303030;
+    --color_333333: #bbbbbb;
+    --color_text_default: #000;
+  }
+
+  .M {
+      display: none;
   }
 }
 
 main {
-    color: var(--color_white);
+    color: var(--color_text_default);
     padding-right: 80px;
     padding-left: 80px;
     padding-top: 200px;
@@ -37,7 +40,7 @@ main {
 .welcome {
   line-height: 40px;
   font-size: 35px;
-  color: var(--color_white);
+  color: var(--color_text_default);
 }
 
 
@@ -140,7 +143,7 @@ main {
 }
 
 .bcArticle {
-  color: var(--color_white);
+  color: var(--color_text_default);
   padding-left: 20px;
   padding-right: 20px;
 }
