@@ -11,17 +11,7 @@
 }
 
 /*--------------------------------*/
-@keyframes article {
-  from {
-    margin-left: 20px;
-  }
 
-  to {
-    margin-left: 15px;
-    margin-top: 5px;
-    box-shadow: var(--color_333333) 5px 0px 10px;
-  }
-}
 
 :root {
   --color_303030: #303030;
@@ -34,9 +24,9 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --color_303030: #d4d2d2;
+    --color_303030: #c4c2c2;
     --color_white: #303030;
-    --color_333333: #bbbbbb;
+    --color_333333: #cacaca;
     --color_text_default: #000;
     --color_373636: #999898;
     --color_2d2d2d: #b8b8b8;
@@ -68,7 +58,7 @@
 
 
   .explications {
-    color: #d7d2d2;
+    color: var(--color_text_default);
   }
 
   .boutton button {
@@ -129,8 +119,8 @@
 
   .articleImg:hover {
     animation-fill-mode: forwards;
-    animation-duration: 0.3s;
-    animation-name: article;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
   }
 
   .articles {
@@ -146,12 +136,13 @@
 
   .articleImg {
     margin-left: 20px;
-    background-color: var(--color_303030);
+    background-color: var(--color_333333);
     width: 336px;
     height: 500px;
     border-radius: 15px;
     margin-bottom: 110px;
-    box-shadow: var(--color_333333) 0px 5px 10px;
+    box-shadow: var(--color_373636) 0px 5px 10px;
+    transition: transform 0.3s ease;
   }
 
   .bcArticle {

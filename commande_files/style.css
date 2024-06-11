@@ -3,20 +3,22 @@
     --color_white: #ffffff80;
     --color_333333: #333333;
     --color_text_default: #fff;
-}
-
-@media (prefers-color-scheme: light) {
+  }
+  @media (prefers-color-scheme: light) {
     :root {
-        --color_303030: #d4d2d2;
-        --color_white: #303030;
-        --color_333333: #bbbbbb;
-        --color_text_default: #000;
-    }
+      --color_303030: #c4c2c2;
+      --color_white: #303030;
+      --color_333333: #cacaca;
+      --color_text_default: #000;
+      .M_black {
+        display: block;
+      }
 
-    .M {
+      .M {
         display: none;
+      }
     }
-}
+  }
 
 table {
     color: var(--color_white);
