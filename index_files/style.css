@@ -19,7 +19,7 @@
   to {
     margin-left: 15px;
     margin-top: 5px;
-    box-shadow: black 5px 0px 10px;
+    box-shadow: var(--color_333333) 5px 0px 10px;
   }
 }
 
@@ -28,6 +28,8 @@
   --color_white: #ffffff80;
   --color_333333: #333333;
   --color_text_default: #fff;
+  --color_373636: #373636;
+  --color_2d2d2d: #2d2d2d;
 }
 
 @media (prefers-color-scheme: light) {
@@ -36,6 +38,8 @@
     --color_white: #303030;
     --color_333333: #bbbbbb;
     --color_text_default: #000;
+    --color_373636: #999898;
+    --color_2d2d2d: #b8b8b8;
   }
 
   .M {
@@ -85,7 +89,7 @@
 
   .boutton .SavoirPlus button {
     margin-left: 50px;
-    background: #373636;
+    background: var(--color_2d2d2d);
   }
 
   .boutton .SavoirPlus a {
@@ -97,7 +101,7 @@
   }
 
   .boutton .SavoirPlus button:hover {
-    background: #2d2d2d;
+    background: var(--color_373636);
   }
 
 
@@ -142,12 +146,12 @@
 
   .articleImg {
     margin-left: 20px;
-    background-color: #212121;
+    background-color: var(--color_303030);
     width: 336px;
     height: 500px;
     border-radius: 15px;
     margin-bottom: 110px;
-    box-shadow: black 0px 5px 10px;
+    box-shadow: var(--color_333333) 0px 5px 10px;
   }
 
   .bcArticle {
