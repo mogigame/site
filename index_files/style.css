@@ -114,28 +114,29 @@
 
 
   .article {
-    padding-top: 100px;
+    padding-top: 100px; 
   }
-
+  
   .articleImg:hover {
     animation-fill-mode: forwards;
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
-
+  
   .articles {
     display: flex;
   }
-
+  
+  
   .articleImg img {
     width: 336px;
     height: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-
+  
   .articleImg {
-    margin-left: 20px;
+    margin-left: 50px;
     background-color: var(--color_333333);
     width: 336px;
     height: 500px;
@@ -144,22 +145,22 @@
     box-shadow: var(--color_373636) 0px 5px 10px;
     transition: transform 0.3s ease;
   }
-
+  
   .bcArticle {
     color: var(--color_text_default);
     padding-left: 20px;
     padding-right: 20px;
   }
-
+  
   .bcArticle p {
     color: gray;
   }
-
+  
   .VoirArticle {
     text-align: end;
   }
-
-
+  
+  
   .probleme2 i {
     position: absolute;
     font-size: 70px;
