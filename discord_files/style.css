@@ -88,12 +88,12 @@
   margin-top: 100px;
 }
 
-li {
+.rules li {
   color: #0090fe;
   margin-bottom: 30px;
 }
 
-li:first-line {
+.rules li:first-line {
   color: var(--color_text_default);
 }
 
