@@ -61,6 +61,12 @@
     color: var(--color_text_default);
   }
 
+  .DiscordStats {
+    position: absolute;
+    left: 1200px;
+    top: 575px;
+  }
+
   .boutton button {
     background: linear-gradient(to top right, #004cff, #00d0ff);
     border-radius: 6px;

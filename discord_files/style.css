@@ -4,12 +4,14 @@
   --color_333333: #333333;
   --color_text_default: #fff;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --color_303030: #c4c2c2;
     --color_white: #303030;
     --color_333333: #cacaca;
     --color_text_default: #000;
+
     .M_black {
       display: block;
     }
@@ -24,77 +26,78 @@
 
 .staffs {
   text-align: center;
-    margin-top: 150px;
-    color: var(--color_text_default);
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 150px;
-  }
-  
-  .logo img{
-    width: 25%;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 15px;
-  }
-  
-  
-  .staff{
-    background-color: var(--color_333333);
-    width: 300px;
-    border-radius: 10px;
-    padding: 15px;
-    margin-left: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin-top: 150px;
+  color: var(--color_text_default);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  padding: 0 80px;
 }
 
-.role{
-    margin-left: 10px;
-    border-radius: 6px;
-    padding: 4px 5.6px;
-    font-size: 12px;
-    line-height: 1px;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
+.logo img {
+  width: 25%;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 15px;
 }
 
-.roles{
-    margin-bottom: 10px;
+
+.staff {
+  background-color: var(--color_333333);
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.staff p{
-    margin: 10px auto;
+.role {
+  margin-left: 10px;
+  border-radius: 6px;
+  padding: 4px 5.6px;
+  font-size: 12px;
+  line-height: 1px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
 }
 
-.rules{
+.roles {
+  margin-bottom: 10px;
+}
+
+.staff p {
+  margin: 10px auto;
+}
+
+.rules {
   color: var(--color_text_default);
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
 }
 
-.rule{
-color: var(--color_white);
-line-height: 27px;
-font-size: 17px;
-border-left: var(--color_text_default) solid 3px;
-padding-left: 15px;
-border-radius: 1%;
-margin-top: 100px;
+.rule {
+  color: var(--color_white);
+  line-height: 27px;
+  font-size: 17px;
+  border-left: var(--color_text_default) solid 3px;
+  padding-left: 15px;
+  border-radius: 1%;
+  margin-top: 100px;
 }
-li{
+
+li {
   color: #0090fe;
   margin-bottom: 30px;
 }
 
-li:first-line{
-  color:var(--color_text_default);
+li:first-line {
+  color: var(--color_text_default);
 }
 
-.white{
+.white {
   color: var(--color_text_default);
 }
 
