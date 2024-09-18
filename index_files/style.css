@@ -48,10 +48,9 @@ main {
   color: var(--color_text_default);
 }
 
-.DiscordStats {
-  position: absolute;
-  left: 1200px;
-  top: 575px;
+.DiscordStats iframe{
+  margin-left: 850px;
+  margin-bottom: -450px;
 }
 
 .boutton button {
@@ -154,10 +153,8 @@ main {
 
 
 .probleme2 i {
-  position: absolute;
   font-size: 70px;
   color: cornflowerblue;
-
 }
 
 .probleme {
